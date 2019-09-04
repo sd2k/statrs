@@ -26,6 +26,8 @@ pub use self::poisson::Poisson;
 pub use self::students_t::StudentsT;
 pub use self::triangular::Triangular;
 pub use self::uniform::Uniform;
+#[cfg(feature = "von_mises")]
+pub use self::von_mises::VonMises;
 pub use self::weibull::Weibull;
 use statistics::{Max, Min};
 
@@ -54,6 +56,8 @@ mod poisson;
 mod students_t;
 mod triangular;
 mod uniform;
+#[cfg(feature = "von_mises")]
+mod von_mises;
 mod weibull;
 mod ziggurat;
 mod ziggurat_tables;

@@ -27,6 +27,8 @@
 #![crate_name = "statrs"]
 
 extern crate rand;
+#[cfg(feature = "von_mises")]
+extern crate rgsl;
 
 #[macro_export]
 macro_rules! assert_almost_eq {
